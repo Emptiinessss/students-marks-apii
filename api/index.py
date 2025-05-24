@@ -3,7 +3,7 @@ import os
 
 # Load student data from JSON file and build a dictionary: {name: marks}
 students = {}
-json_path = os.path.join(os.path.dirname(__file__), '..', 'students.json')
+json_path = os.path.join(os.path.dirname(__file__), 'students.json')
 with open(json_path, 'r') as f:
     data = json.load(f)
     for entry in data:
